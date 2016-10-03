@@ -1,0 +1,73 @@
+body{
+    padding: rem-calc(16);
+    >.row{
+        background: $white;
+        border: 8px solid $border-color;
+        border-radius: rem-calc(16);
+        padding: rem-calc(16);
+        min-height: 100%;
+        max-height: 100%;
+        overflow: hidden;
+        
+        .light-font{
+            font-weight: 300;
+        }
+        
+        header{
+            .title{
+                h1{
+                    line-height: 2;
+                    @include breakpoint(medium down){
+                        line-height: 3;
+                        font-size: rem-calc(36);
+                    }
+                }
+            }
+        }
+        
+        .twitter-search{
+            form{
+                text-align: center;
+            }
+            
+            .twitter_container{
+                border: 1px solid $border-color;
+                border-radius: rem-calc(16);
+                padding: rem-calc(0 8);
+                overflow: scroll;
+                .tweet_container{
+                    padding-top: rem-calc(16);
+                    border-bottom: 1px dashed $border-color;
+                    &:last-child{
+                        border: none;
+                    }
+                    //User's profile picture
+                    >img{
+                        margin-right: rem-calc(8);
+                        vertical-align: top;
+                        border-radius: rem-calc(8);
+                    }
+                    >ul{
+                        display: inline-block;
+                        margin-left: 0;
+                        li{
+                            padding-right: rem-calc(8);
+                            //User's name
+                            &:first-child{
+                                padding-bottom: rem-calc(4);
+                            }
+                            //User's @username
+                            &:last-child{
+                                font-size: $cite-font-size;
+                            }
+                        }
+                    }
+                    //Tweet text
+                    >p{
+                        margin-top: rem-calc(16);
+                    }
+                }
+            }
+        }
+    }
+}
