@@ -31,12 +31,19 @@
                <div class="twitter-search">
                 
                     <div class="large-8 medium-11 columns medium-centered">
+                         
+                         <p class="text-center">
+                              This is a simple application that reads tweets from Twitter.</br>
+                              Go ahead and find recent tweets from any user!
+                         </p>
                
                          <form id="username" name="username" action="get_tweets.php" method="post">
-                              <label for="usrval" class="text-left">Please enter a Twitter @username</label>
-                              <input type="text" name="usrval" id="usrval" value="<?php echo $_POST['usrval'] ?>" >
-                              <label for="count" class="text-left">How many tweets would you like to show?</label>
-                              <input type="number" name="count" id="count">
+                              <label for="usrval" class="text-left">Please enter a Twitter @username
+                                   <input type="text" name="usrval" id="usrval" value="<?php echo $_POST['usrval'] ?>" >
+                              </label>
+                              <label for="count" class="text-left">No. of tweets
+                                   <input type="number" name="count" id="count" value="<?php echo $_POST['count'] ?>">
+                              </label>
                               <input type="submit" value="Search" class="button">
                               <input type="reset" value="Clear" class="button">
                          </form>

@@ -12,12 +12,12 @@
     <div class="row">
         
         <header>
-            <div class="medium-10 columns medium-centered">
+            <div class="large-10 medium-11 columns medium-centered">
                 
-                <div class="logo medium-2 columns">
+                <div class="logo large-2 medium-3 columns">
                     <img src="/images/logo.png" alt="Logo" />
                 </div>
-                <div class="title medium-10 columns">
+                <div class="title large-10 medium-9 columns">
                     <h1>The Imperial Tux Empire</h1>
                 </div>
             
@@ -28,11 +28,20 @@
         <div class="medium-12 columns">
             <div class="twitter-search">
                 
-                <div class="medium-8 columns medium-centered">
+                <div class="large-8 medium-11 columns medium-centered">
+                    
+                    <p class="text-center">
+                        This is a simple application that reads tweets from Twitter.</br>
+                        Go ahead and find recent tweets from any user!
+                    </p>
                 
                     <form id="username" name="username" action="get_tweets.php" method="post">
-                        <label for="usrval" class="text-left">Please enter a Twitter @username</label>
-                        <input type="text" name="usrval" id="usrval">
+                        <label for="usrval" class="text-left">Please enter a Twitter @username
+                            <input type="text" name="usrval" id="usrval">
+                        </label>
+                        <label for="count" class="text-left">No. of tweets
+                            <input type="number" name="count" id="count">
+                        </label>
                         <input type="submit" value="Search" class="button">
                         <input type="reset" value="Clear" class="button">
                     </form>
